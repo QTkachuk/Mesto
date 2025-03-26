@@ -1,0 +1,86 @@
+@media screen and (max-width: 930px) {
+  .container {
+    max-width: 826px;
+    padding: 0px 27px;
+  }
+
+  .header__container {
+    padding-bottom: 41px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile__container {
+    flex-direction: column;
+  }
+
+  .profile__info {
+    margin-bottom: 36px;
+  }
+
+  .profile__add-button {
+    background: url(../img/AddButton-mobile.svg) no-repeat center center;
+    background-size: contain;
+    width: 282px;
+  }
+
+  .profile__add-button:hover {
+    background: url(../img/AddButton-mobile-hover.svg)  no-repeat center center;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 521px) {
+  .profile__info {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .profile__avatar {
+    margin: 0px;
+    margin-bottom: 26px;
+  }
+
+  .profile__info__text {
+    margin: 0px;
+  }
+
+  .profile__edit-button {
+    position: absolute;
+    top: 177px;
+    right: -40px;
+  }
+
+  .popup__body {
+    width: 282px;
+    height: 322px;
+    padding: 25px 22px;
+  }
+
+  .popup__body-text {
+    font-size: 18px;
+    margin-bottom: 75px;
+  }
+
+  .popup__body__form-btn {
+    padding: 14px 82px;
+    font-size: 14px;
+  }
+
+  .popup-close-big {
+    display: none;
+  }
+
+  .popup-close-mini {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 329px) {
+  .profile__edit-button {
+    position: absolute;
+    top: 177px;
+    right: 20px;
+  }
+}

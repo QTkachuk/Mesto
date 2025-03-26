@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content">
+    <header class="header header__content">
+      <div class="container header__container">
+        <a href="#">
+          <img src="img/logo.svg" alt="Логотип" class="logo" />
+        </a>
+      </div>
+    </header>
+    <main class="main main__content">
+      <section class="profile profile__content">
+        <div class="container profile__container">
+          <div class="profile__info">
+            <img src="img/Avatar.png" alt="Аватарка" class="profile__avatar" />
+            <div class="profile__info__text">
+              <span class="profile__info__name">Жак-Ив Кусто</span>
+              <span class="profile__info__description"
+                >Исследователь океана</span
+              >
+            </div>
+            <button class="profile__edit-button" id="open-pop-up"></button>
+          </div>
+          <button class="profile__add-button"></button>
+        </div>
+      </section>
+      <section class="places places__content">
+        <div class="container">
+          <div class="places__elements">
+            <div class="places__elements__card">
+              <img
+                class="places__elements__card-img"
+                src="img/kirill-pershin-1088404-unsplash.jpg"
+                alt="Фото места"
+              />
+              <div class="places__elements__card__info">
+                <span class="places__elements__card__name">Карачаевск</span>
+                <button class="like"></button>
+              </div>
+            </div>
+            <div class="places__elements__card">
+              <img
+                class="places__elements__card-img"
+                src="img/elbrus.png"
+                alt="Фото места"
+              />
+              <div class="places__elements__card__info">
+                <span class="places__elements__card__name">Гора Эльбрус</span>
+                <button class="like"></button>
+              </div>
+            </div>
+            <div class="places__elements__card">
+              <img
+                class="places__elements__card-img"
+                src="img/dombay.png"
+                alt="Фото места"
+              />
+              <div class="places__elements__card__info">
+                <span class="places__elements__card__name">Домбай</span>
+                <button class="like"></button>
+              </div>
+            </div>
+            <div class="places__elements__card">
+              <img
+                class="places__elements__card-img"
+                src="img/elbrus.png"
+                alt="Фото места"
+              />
+              <div class="places__elements__card__info">
+                <span class="places__elements__card__name">Гора Эльбрус</span>
+                <button class="like"></button>
+              </div>
+            </div>
+            <div class="places__elements__card">
+              <img
+                class="places__elements__card-img"
+                src="img/dombay.png"
+                alt="Фото места"
+              />
+              <div class="places__elements__card__info">
+                <span class="places__elements__card__name">Домбай</span>
+                <button class="like"></button>
+              </div>
+            </div>
+            <div class="places__elements__card">
+              <img
+                class="places__elements__card-img"
+                src="img/kirill-pershin-1088404-unsplash.jpg"
+                alt="Фото места"
+              />
+              <div class="places__elements__card__info">
+                <span class="places__elements__card__name">Карачаевск</span>
+                <button class="like"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer__content">
+      <div class="container footer__container">
+        <span class="footer__text">© 2025 Mesto Russia</span>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__container">
+        <div class="popup__body">
+          <span class="popup__body-text">Редактировать профиль</span>
+          <form action="" id="popup-body-form" class="popup__body__form">
+            <input type="text" name="" id="name-Input" class="popup__body__form-input" />
+            <input type="text" name="" id="job-Input" class="popup__body__form-input" />
+            <button class="popup__body__form-btn">Сохранить</button>
+          </form>
+          <div class="popup__close" id="popup-close">
+            <svg
+              class="popup-close-big"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 28.8L19.2 16L32 3.2L28.8 0L16 12.8L3.2 0L0 3.2L12.8 16L0 28.8L3.2 32L16 19.2L28.8 32L32 28.8Z"
+                fill="white"
+              />
+            </svg>
+            <svg class="popup-close-mini"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 18L12 10L20 2L18 0L10 8L2 0L0 2L8 10L0 18L2 20L10 12L18 20L20 18Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
